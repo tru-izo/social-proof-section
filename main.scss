@@ -1,0 +1,22 @@
+$primary-color: hsl(300, 43%, 22%);
+$seconday-color: hsl(333, 80%, 67%);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background-color: #fff;
+    font-family: 'Spartan', sans-serif;
+    Font-size: 15px;
+    @include center;
+}
