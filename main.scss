@@ -2,21 +2,37 @@ $primary-color: hsl(300, 43%, 22%);
 $seconday-color: hsl(333, 80%, 67%);
 
 @mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    height:100vh;
-    background-color: #fff;
-    font-family: 'Spartan', sans-serif;
-    Font-size: 15px;
-    @include center;
+body {
+  height: 100vh;
+  background-color: #fff;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  @include center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bg-img {
+//   position: absolute;
+//   width: 200px;
+ 
+}
+ .bg-bottom {
+    bottom: 200px;
+    right: 200px;
+  }
+.attribution{
+    position: fixed;
+    bottom:0;
 }
