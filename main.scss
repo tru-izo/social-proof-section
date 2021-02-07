@@ -11,6 +11,8 @@ $seconday-color: hsl(333, 80%, 67%);
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -18,21 +20,28 @@ body {
   background-color: #fff;
   font-family: "Spartan", sans-serif;
   font-size: 15px;
-  @include center;
+  //   @include center;
   flex-direction: column;
   overflow: hidden;
 }
 
 .bg-img {
-//   position: absolute;
-//   width: 200px;
- 
+  position: absolute;
+  //   width: 200px;
 }
- .bg-bottom {
-    bottom: 200px;
-    right: 200px;
-  }
-.attribution{
-    position: fixed;
-    bottom:0;
+.bg-bottom {
+  bottom: 200px;
+  right: -200px;
+}
+
+.ad h1 {
+  color: $primary-color;
+  font-weight: 700px;
+  font-size: 2rem;
+}
+
+.attribution {
+    align-items: center;
+  position: fixed;
+  bottom: 0;
 }
